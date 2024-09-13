@@ -17,7 +17,8 @@ The parts of the user guide that describe the UI may be out of sync with the cod
 ### CLI
 
 Install the CLI tool:
-
+   
+    npm ls @lingui/cli || npm install @lingui/cli --save-dev && npm run build
     npm run build && npm i -g ./cli
 
 Run the CLI:
