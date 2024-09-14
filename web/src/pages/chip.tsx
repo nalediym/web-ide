@@ -151,7 +151,7 @@ export const Chip = () => {
     downloadRef.current.download = `${state.controls.project}`;
     downloadRef.current.click();
 
-    console.log("Hello from VSCode :)");
+    console.log(`files = ${files}`);
 
     URL.revokeObjectURL(url);
   };
@@ -217,6 +217,15 @@ export const Chip = () => {
           data-placement="left"
         >
           ⬇️
+        </button>
+        <button
+          className="flex-0"
+          onClick={downloadProject}
+          disabled={state.controls.builtinOnly}
+          data-tooltip={t`Save .hdl files to local github`}
+          data-placement="left"
+        >
+          💾 
         </button>
       </fieldset>
     </>
