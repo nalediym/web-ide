@@ -151,10 +151,28 @@ export const Chip = () => {
     downloadRef.current.download = `${state.controls.project}`;
     downloadRef.current.click();
 
-    console.log(`files = ${files}`);
+    console.log(`pathname : ${downloadRef.current.pathname}`);
+    console.log(`state.files.hdl : ${state.files.hdl}`);
 
     URL.revokeObjectURL(url);
   };
+  const saveToLocalFolder = async () => {
+    if (!downloadRef.current) {
+      return;
+    }
+
+    const files = await actions.getProjectFiles();
+    const url = await zip(files);
+    downloadRef.current.href = url;
+    downloadRef.current.download = `${state.controls.project}`;
+    downloadRef.current.click();
+
+    console.log(`saveToLocalFolder pathname : ${downloadRef.current.pathname}`);
+    console.log(`saveToLocalFolder state.files.hdl : ${state.files.hdl}`);
+
+    URL.revokeObjectURL(url);
+  };
+  
 
   const [useBuiltin, setUseBuiltin] = useState(false);
   const toggleUseBuiltin = () => {
@@ -220,7 +238,7 @@ export const Chip = () => {
         </button>
         <button
           className="flex-0"
-          onClick={downloadProject}
+          onClick={saveToLocalFolder}
           disabled={state.controls.builtinOnly}
           data-tooltip={t`Save .hdl files to local github`}
           data-placement="left"
