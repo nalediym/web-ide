@@ -1,3 +1,4 @@
+// TODO: Feed this into the hdl from an hdl file named ./1/Nand.hdl
 export const hdl = `// This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -12,7 +13,7 @@ CHIP Nand {
     
     PARTS:
     BUILTIN Nand;
-}`;
+}`; 
 
 export const tst = `// This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
