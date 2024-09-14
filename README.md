@@ -6,6 +6,12 @@ Presently the implementation focuses on the Hardware Simulator (projects 1, 2, 3
 
 Users can work with the tools via a web IDE, or via a VS Code extension. Both are described below.
 
+## How to start
+
+1. Git clone the repo 
+
+    git clone https://github.com/nand2tetris/web-ide.git
+
 ## User Guide
 
 The user guides for the web IDE are available [here](https://drive.google.com/drive/folders/10hDzWql94MTPIStI3KEx--JYpHTBoeE6) and can also be accessed by clicking "Guide" at the top right of the [published project](https://nand2tetris.github.io/web-ide).
