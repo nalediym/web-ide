@@ -145,13 +145,13 @@ export const Chip = () => {
       return;
     }
 
-    const files = await actions.getProjectFiles();
+    const files = await actions.getProjectFiles(); 
     const url = await zip(files);
     downloadRef.current.href = url;
     downloadRef.current.download = `${state.controls.project}`;
     downloadRef.current.click();
 
-    URL.revokeObjectURL(url);
+    URL.revokeObjectURL(url); // FIXME: Redirect to a different place... 
   };
 
   const [useBuiltin, setUseBuiltin] = useState(false);
