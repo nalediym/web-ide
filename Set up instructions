@@ -1,0 +1,6 @@
+How to install the repo: 
+
+Git clone https://github.com/nand2tetris/web-ide.git 
+Npm install 
+npm run build -w web
+
