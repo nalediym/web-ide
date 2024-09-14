@@ -8,10 +8,10 @@ Users can work with the tools via a web IDE, or via a VS Code extension. Both ar
 
 ## How to start
 
-1. Git clone the repo 
-
-    git clone https://github.com/nand2tetris/web-ide.git
-
+    git clone https://github.com/nand2tetris/web-ide.git 
+    npm install 
+    npm run build -w web
+   
 ## User Guide
 
 The user guides for the web IDE are available [here](https://drive.google.com/drive/folders/10hDzWql94MTPIStI3KEx--JYpHTBoeE6) and can also be accessed by clicking "Guide" at the top right of the [published project](https://nand2tetris.github.io/web-ide).
