@@ -1,4 +1,4 @@
-// TODO: Feed this into the hdl from an hdl file named ./1/Nand.hdl
+// TODO: #455 Feed this into the hdl from an hdl file named ./1/Nand.hdl
 export const hdl = `// This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
