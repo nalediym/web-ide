@@ -151,6 +151,8 @@ export const Chip = () => {
     downloadRef.current.download = `${state.controls.project}`;
     downloadRef.current.click();
 
+    console.log("Hello from VSCode :)");
+
     URL.revokeObjectURL(url);
   };
 
